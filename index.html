@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+     <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--Tailwind css CDN link-->
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Offer Card -->
+    <div id="offcard">
+        <section class="bg-black text-white flex items-center justify-between px-4 py-3 sm:px-6 md:px-8 lg:px-12">
+            <!-- Offer Text -->
+            <div class="flex-1 text-center sm:text-left">
+                <h1 class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                    Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order
+                </h1>
+            </div>
+            
+            <!-- Close Button -->
+            <div class="ml-4 sm:ml-6 md:ml-8">
+                <button id="closeoff" class="text-white hover:text-gray-300 transition-colors cursor-pointer font-bold text-lg sm:text-xl md:text-2xl p-1" 
+                        onclick="document.getElementById('offcard').style.display='none'">
+                    ×
+                </button>
+            </div>
+        </section>
+    </div>
+     
+     <!-- Nav Bar -->
+      <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10 mr-5">
+        <h1 class="text-2xl font-bold">NOSTRA</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden" style="cursor: pointer;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+        <ul class="flex gap-20 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collection.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contacts.html">Contact Us</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <!-- Side Nav Bar -->
+     <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50% ;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer text-white">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 md:flex">
+            <li>
+                <a class="text-white hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="text-white hover:underline hover:text-white" href="collection.html">Products</a>
+            </li>
+            <li>
+                <a class="text-white hover:underline hover:text-white" href="contacts.html">Contact</a>
+            </li>
+        </ul>
+     </section>
+    <!--Slider-->
+    <div class="mt-10">
+        <div class="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+            <!-- Background Image Container -->
+            <div class="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden">
+                <!-- Background Image -->
+                <img src="images/offer2.jpg" alt="Background image" class="absolute inset-0 w-full h-full object-cover">
+                
+                <!-- Dark Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                
+                <!-- Navigation Arrows -->
+                <button class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl hover:text-gray-300 transition-colors">
+                    &lt;
+                </button>
+                <button class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl hover:text-gray-300 transition-colors">
+                    &gt;
+                </button>
+                
+                <!-- Content Container -->
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8">
+                    <!-- Main Heading -->
+                    <h1 class="text-white font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-2 sm:mb-4">
+                        Level up your style with our
+                    </h1>
+                    
+                    <!-- Subheading -->
+                    <h2 class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8">
+                        Summer Collection
+                    </h2>
+                    
+                    <!-- CTA Button -->
+                    <button class="bg-white text-black px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium text-sm sm:text-base hover:bg-gray-100 transition-colors shadow-lg">
+                        Shop Now &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brands -->
+    <section class="mt-6 sm:mt-8 md:mt-10 px-4 sm:px-6 lg:px-8">
+        <!-- Section Title -->
+        <h1 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 md:mb-10">Brands</h1>
+        
+        <!-- Brands Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 sm:gap-6 md:gap-8">
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand1.png" alt="Puma" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Puma</h2>
+            </div>
+            
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand2.png" alt="Adidas" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Adidas</h2>
+            </div>
+            
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand3.png" alt="Simple" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Simple</h2>
+            </div>
+            
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand4.png" alt="Leaves" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Leaves</h2>
+            </div>
+            
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand1.png" alt="Behance" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Behance</h2>
+            </div>
+            
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand5.png" alt="Twitch" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Twitch</h2>
+            </div>
+            
+            <!-- Brand Item -->
+            <div class="flex flex-col items-center text-center group cursor-pointer hover:transform hover:scale-105 transition-transform duration-200">
+                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-2 sm:mb-3 flex items-center justify-center bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="images/brand4.png" alt="Leaves" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">Leaves</h2>
+            </div>
+        </div>
+    </section>
+     <!-- Experience -->
+      <section class="mt-10 justify-between flex">
+        <div class="pl-3 font-bold text-3xl">
+            <h1>We provide Best</h1>
+            <h1 class="pt-2">Customer Experience</h1>
+        </div>
+        <div class="text-2xl pr-10 pt-2">
+            || We ensure that our customer have the best shopping experience
+        </div>
+        
+      </section>
+      <!-- Review -->
+       <section>
+        <div>
+            <div class="md:flex">
+            <div class="bg-gray-200 p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-20 inline">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+
+                <h2 class="font-bold">Original Products</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident dolorum maxime temporibus necessitatibus voluptates.
+                </p>
+            </div>
+            <div class="bg-gray-200 p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-20 inline">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+</svg>
+
+
+                <h2 class="font-bold">Satisfaction Guarenteed</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident dolorum maxime temporibus necessitatibus voluptates.</p>
+            </div>
+            <div class="bg-gray-200 p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-20 inline">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+</svg>
+
+                <h2 class="font-bold">New Arrivals</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident dolorum maxime temporibus necessitatibus voluptates.</p>
+            </div>
+            <div class="bg-gray-200 p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-20 inline">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+</svg>
+
+
+                <h2 class="font-bold">Fast Shipping</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident dolorum maxime temporibus necessitatibus voluptates.</p>
+            </div>
+        </div>
+        </div>
+        
+       </section>
+       <!-- New Arrival -->
+        <section class="mt-10">
+            <div>
+                <h1 class="text-2xl font-bold pl-3">New Arrivals</h1>
+            </div>
+            <div class="mt-10">
+                    <div style="position: relative; display: inline-block; margin-left: 100px;">
+  <img src="images/na1.avif" alt="Background image" style="display: block; width: 250px; border-radius: 20px;">
+  <div style="
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: black;
+      opacity: 0.5;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 24px; z-index: 1;
+      border-radius: 20px;
+    ">
+  </div>
+  <button style="
+      position: absolute;
+      top: 20px; right: 20px;
+      z-index: 2;
+      padding: 8px;
+      font-size: 15px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 180px;
+      margin-right: 50px;
+    ">
+    Shop Now &rarr;
+  </button>
+</div>
+                
+                
+<div style="position: relative; display: inline-block; margin-left: 100px;">
+  <img src="images/na3.webp" alt="Background image" style="display: block; width: 238px; border-radius: 20px;">
+  <div style="
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: black;
+      opacity: 0.5;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 24px; z-index: 1;
+      border-radius: 20px;
+    ">
+  </div>
+  <button style="
+      position: absolute;
+      top: 20px; right: 20px;
+      z-index: 2;
+      padding: 8px;
+      font-size: 15px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 180px;
+      margin-right: 50px;
+    ">
+    Shop Now &rarr;
+  </button>
+</div>
+<div style="position: relative; display: inline-block; margin-left: 100px;">
+  <img src="images/na2.avif" alt="Background image" style="display: block; width: 250px; border-radius: 20px;">
+  <div style="
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: black;
+      opacity: 0.5;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 24px; z-index: 1;
+      border-radius: 20px;
+    ">
+  </div>
+  <button style="
+      position: absolute;
+      top: 20px; right: 20px;
+      z-index: 2;
+      padding: 8px;
+      font-size: 15px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 180px;
+      margin-right: 50px;
+    ">
+    Shop Now &rarr;
+  </button>
+</div>
+<div style="position: relative; display: inline-block; margin-left: 100px;">
+  <img src="images/na4.jpg" alt="Background image" style="display: block; width: 238px; border-radius: 20px;">
+  <div style="
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-color: black;
+      opacity: 0.5;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 24px; z-index: 1;
+      border-radius: 20px;
+    ">
+  </div>
+  <button style="
+      position: absolute;
+      top: 20px; right: 20px;
+      z-index: 2;
+      padding: 8px;
+      font-size: 15px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 180px;
+      margin-right: 50px;
+    ">
+    Shop Now &rarr;
+  </button>
+</div>
+            </div>
+        </section>
+        <!-- Most Wanted -->
+         <div class="initial-scroll-animate reveal-scroll-animate" style="margin-top: 25px;">
+        <h1 class="text-2xl font-bold pl-3">Most Wanted</h1>
+
+        <div  class="most-wanted p-5">
+
+
+            <div class="most-wanted-container">
+                <img style="width: 310px;" src="images/na5.webp" alt="">
+                
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 250px;" src="images/na6.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+                
+
+            </div>
+
+            <div class="most-wanted-container">
+                <img style="width: 280px;" src="images/na10.jpg" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+                
+
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 250px;" src="images/na9.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="img/icons/blackheart.png" alt="">
+
+            </div>
+
+            
+
+            
+
+            
+        </div>
+    </div>
+    <!-- Limited offer -->
+    <section class="bg-black p-4 m-6 md:p-10 flex justify-center">
+        <div class="mt-20">
+        <h2 class="font-bold text-3xl mb-5 md:text-5xl text-white">Limitted Offers
+        </h2>
+        <div>
+            <button class="bg-white text-black rounded p-2">Shop Now</button>
+        </div>
+        <p class="mt-5 text-white">160+ Dress Varieties | 100+ Clients</p>
+
+        </div>
+        <div class="hidden md:block ml-40">
+            <img src="./images/offer.jpg" alt="Header Image" class="w-100 p-15">
+        </div>
+        
+    </section>
+    <!--News Letter-->
+    <section class="text-center mt-20">
+        <h1 class="text-5xl text-center mt-5 font-bold">Join our News Letter</h1>
+        <p class="text-3xl mt-5">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3 mt-5" style="width: 80%;" >
+        <br>
+        <button class="bg-black text-white p-3 m-1 text-3xl rounded">Subscribe</button>
+    </section>
+    <!--Footer-->
+    <section class="bg-black mt-5">
+        <h1 class="font-bold text-5xl p-5 text-white">Nostra</h1>
+        <p class="pl-5 text-white text-3xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate excepturi animi iusto tenetur debitis.</p>
+        <p class="p-5 text-white text-3xl">@2025 Nostra.com</p>
+    </section>
+    <div class="initial-scroll-animate reveal-scroll-animate">
+        <script src="script.js"></script>
+</body>
+</html>

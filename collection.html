@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <!--Tailwind css CDN link-->
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+      <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10 mr-5">
+        <h1 class="text-2xl font-bold">NOSTRA</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden" style="cursor: pointer;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+        <ul class="flex gap-20 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collection.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contacts.html">Contact Us</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <!-- Side Nav Bar -->
+     <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50% ;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer text-white">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 md:flex">
+            <li>
+                <a class="text-white hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="text-white hover:underline hover:text-white" href="collection.html">Products</a>
+            </li>
+            <li>
+                <a class="text-white hover:underline hover:text-white" href="contacts.html">Contact</a>
+            </li>
+        </ul>
+     </section>
+    <!-- Side Option -->
+    <div style="display: flex;">
+        <section style="width: 300px; border-right: black solid 2px;" class="flex mt-10">
+            <div>
+                <div>
+                <h1 class="text-4xl font-bold m-6">Occasion</h1>
+            </div>
+            <div class="text-3xl m-6">
+                <input type="checkbox">Summer<br>
+                <input type="checkbox">Party<br>
+                <input type="checkbox">Beach
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold m-6">Colours</h1>
+            </div>
+            <div class="text-3xl m-6">
+                <input type="checkbox">Red<br>
+                <input type="checkbox">Blue<br>
+                <input type="checkbox">White
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold m-6">Arrival</h1>
+            </div>
+                <div class="text-3xl m-6">
+                    <input type="checkbox">New<br>
+                    <input type="checkbox">Old
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- Products Section -->
+         <div style="width: 1300px; margin-left: 250px;" class="mt-10">
+           <section class="p-4 text-center`" >
+           <input id="search" type="text" placeholder="Search for Products...." class="border border-black p-2 m-3 rounded" style="width: 50%;">
+           <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
+               <div>
+                   <img src="./images/na1.avif" class="inline hover:shadow-xl transform hover:-translate-y-2" style="width: 250px;">
+                   <h1 class="font-bold">Polo T-Shirt</h1>
+                   <p>Rs.499</p>
+               </div>
+               <div>
+                   <img src="./images/na2.avif" class="inline hover:shadow-xl transform hover:-translate-y-2" style="width: 250px; height: 307px;">
+                   <h1 class="font-bold">Printed Shirt</h1>
+                   <p>Rs.799</p>
+               </div>
+               <div>
+                   <img src="./images/na3.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" style="width: 250px; height: 307px;">
+                   <h1 class="font-bold">Cargo White</h1>
+                   <p>Rs.899</p>
+               </div>
+               
+           </div>
+           <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
+               <div>
+                   <img src="./images/na4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" style="width: 250px; height: 307px;">
+                   <h1 class="font-bold">Cargo Green</h1>
+                   <p>Rs.999</p>
+               </div>
+               <div>
+                   <img src="./images/na9.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" style="width: 250px; height: 307px;">
+                   <h1 class="font-bold">Cargo Grey</h1>
+                   <p>Rs.1099</p>
+               </div>
+               <div>
+                   <img src="./images/na6.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" style="width: 250px; height: 307px;">
+                   <h1 class="font-bold">Plain Polo</h1>
+                   <p>Rs.699</p>
+               </div>
+           </div>
+       </section>
+         </div>
+    </div>
+      
+     <!--Footer-->
+    <section class="bg-black mt-5">
+        <h1 class="font-bold text-5xl p-5 text-white">Nostra</h1>
+        <p class="pl-5 text-white text-3xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate excepturi animi iusto tenetur debitis.</p>
+        <p class="p-5 text-white text-3xl">@2025 Nostra.com</p>
+    </section>
+
+    <script src="collection.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.most-wanted{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+    overflow-x: scroll;
+    gap: 20px;
+   
+    
+}
+
+.most-wanted-container{
+   position: relative; 
+}
+
+.most-wanted img{
+    border-radius: 2%;
+    
+     
+ }
+
+ .sale-overlay{
+    position: absolute;
+    top:3px;
+    left: 3px;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+ }
+
+ .most-wanted::-webkit-scrollbar {
+    appearance: none;
+    
+  }
+   
+.like-button{
+    position: absolute;
+    width: 15%;
+    bottom: 12%;
+    right: 5%;
+}
